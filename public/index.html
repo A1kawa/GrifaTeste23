@@ -9,16 +9,12 @@
     <link rel="stylesheet" href="TemplateData/style.css">
 
 	<style>
-	
-p {
-    text-align: justify;
-}
-
 .content {
     margin: 0 auto;
     max-width: 900px;
     background-color: #eee;
     padding: 10px;
+    
 }
 
 .btn {
@@ -54,20 +50,18 @@ p {
     height: 100vh;
     display: none;
 }
-
-.modal-content {
-    margin: 0 auto;
-    margin-top: 5vh;
-    max-width: 90vw;
-    max-height: 90vh;
-    background-color: none;
-    padding: 0;
-    
+#dv-modal{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
 }
 
-.modal-header h1{
-    font-weight: bold;
-    text-align: center;
+.modal-content {
+    /*margin: 0 auto;
+    margin-top: 5vh;*/
+    width: 90vw;
+    height: 90vh;
+    background-color: none;
 }
 
 .modal-footer{
@@ -104,14 +98,14 @@ p {
         <div class="modal-content">
             
 
-            <div class="modal-body">
-              <div class="modal-footer">
-                  <button class="btn" onclick="closeModal('dv-modal')">X</button>
-              </div>
+          <div class="modal-footer">
+            <img src="http://lead2023.gbe.live/wp-content/uploads/sites/61/2023/02/BOT-Close.png" onclick="closeModal('dv-modal')" style="margin-right: -25px;">
+            
+          </div>
                
 
-                   <iframe src="https://lead2023.gbe.live/stand/css/" style="height:600px; width:100%;border:none;"></iframe>
-            </div>
+          <iframe src="https://lead2023.gbe.live/stand/css/" style="height:100%; width:100%;border:none;"></iframe>
+          
 
           
         </div>
